@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login confidencial</title>
+    <link rel="stylesheet" href="index.css">
+
+    <div class="center">
+        <img src="./img/nebula.png"></img>
+    </div>
+
+<style>
+
+    body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: rgb(235, 235, 235);
+            }
+            input{
+                padding: 10px;
+                outline: none;
+                font-size: 16px;
+            }
+    
+    </style>
+    </head>
+<body>
+    <h1>Login confidencial</h1>
+    <form action="outraPAGINA.html" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br>
+        <input type="submit" value="Entrar">
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            const nomeInput = document.getElementById('nome');
+            const senhaInput = document.getElementById('senha');
+            if (nomeInput.value === 'samuel' && senhaInput.value === '71617') {
+                window.location.href = 'outraPAGINA.html';
+            } else {
+                alert('Nome ou senha incorretos. Tente novamente.');
+                event.preventDefault();
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</html>
+</head>

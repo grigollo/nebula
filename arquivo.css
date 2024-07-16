@@ -1,0 +1,31 @@
+body {
+    color:  rgb(22, 22, 22);
+    background-color: rgb(241, 241, 241);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+header img {
+    width: 200px;
+    height: 250px;
+}
